@@ -1,0 +1,97 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+    </body>
+
+    <script>
+/* Los siguientes codigos solamente estan para ser
+ejecutaodos en la console chrome abriendo primero el "funciones.html"
+que nos deriva a una pagina donde tenemos que inpeccionar.
+*/
+
+// Codigo N°2
+// Funcion Declarada
+
+function estoEsUnafuncion(){
+    console.log("Uno");
+    console.log("Dos");
+    console.log("Tres");
+}
+
+//Inovacion de funcion
+
+estoEsUnafuncion();
+
+// Codigo N°3
+// Funcion Declarada
+
+function unaFuncionQueDevuelveValor(){
+    console.log("Uno");
+    console.log("Dos");
+    console.log("Tres");
+    return "La funcion ha retornado una cadena de texto"; 
+}
+
+let valorDeFuncion = unaFuncionQueDevuelveValor();
+
+console.log(valorDeFuncion);
+
+// Codigo N°4
+// Funcion Declarada
+
+function unaFuncionQueDevuelveValor(){
+    console.log("Uno");
+    return 19;
+    console.log("Dos");
+    console.log("Tres");
+    return "La funcion ha retornado una cadena de texto"; 
+}
+
+// Codigo N°5
+// Funcion Declarada
+
+
+function saludar(nombre,edad){
+    console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+}
+
+saludar("Victor",18);
+saludar();
+
+// Codigo N°6
+// Funcion Declarada
+
+function saludar(nombre = "Desconocido",edad = 0){
+    console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+}
+
+saludar("Victor",18);
+saludar();
+
+// Codigo N°7
+// Funcion Declarada VS funciones expresadas.
+// Este codigo es la "Funcion Declarada".
+
+function funcionDeclarada(){
+    console.log("Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo, incluso antes de que la funcion sea declarada.");
+}
+
+funcionDeclarada();
+
+// Este codigo es la "Funcion Expresada".
+
+const funcionExpresada = function(){
+    console.log("Esto es una funcion expresada, es decir, una funcion que se le ha asignado como valor a una variable, si invocamos esta funcion antes de su definicion JS nos dira 'Cannot access 'funcionExpresada' before initialization'.");
+}
+
+funcionExpresada();
+
+    </script> 
+
+</html>
+
